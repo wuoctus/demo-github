@@ -1,0 +1,108 @@
+/* Thiết lập cơ bản */
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --header-bg: #24292e;
+    --header-text: #ffffff;
+    --card-bg: #ffffff;
+    --accent-color: #0366d6;
+}
+
+/* Biến cho Dark Mode */
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --header-bg: #111;
+    --header-text: #ffffff;
+    --card-bg: #2d2d2d;
+    --accent-color: #58a6ff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+button#theme-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button#theme-toggle:hover {
+    background-color: #005cc5;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+.step {
+    background-color: var(--card-bg);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: background-color 0.3s;
+}
+
+.step h2 {
+    color: var(--accent-color);
+    margin-top: 0;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
